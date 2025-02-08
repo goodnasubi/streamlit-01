@@ -1,10 +1,10 @@
 [Unit]
-Description=Run my-app
+Description=Run streamlit-01
 After=network.target
 
 [Service]
-WorkingDirectory=/home/ec2-user/my-app
-ExecStart=/home/ec2-user/my-app/run.sh
+WorkingDirectory=/home/ec2-user/streamlit-01
+ExecStart=/home/ec2-user/streamlit-01/run.sh
 Restart=always
 User=ec2-user
 
