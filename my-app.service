@@ -1,0 +1,12 @@
+[Unit]
+Description=Run my-app
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ec2-user/my-app
+ExecStart=/home/ec2-user/my-app/run.sh
+Restart=always
+User=ec2-user
+
+[Install]
+WantedBy=multi-user.target
